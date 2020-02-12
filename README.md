@@ -68,7 +68,7 @@ FFmpeg解码出来的音频数据是PCM格式，可以使用H5的Web Audio Api�
 这个模块需要加载原生代码生成的胶水代码(glue code)，胶水代码会加载wasm。
 
 ```
-self.importScripts("libffmpeg.js");
+self.importScripts("wasmdecoder.js");
 ```
 ### 4.5.1 接口
 - initDecoder：初始化解码器，开辟文件缓存；

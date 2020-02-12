@@ -5,7 +5,7 @@ self.Module = {
 };
 
 self.importScripts("common.js");
-self.importScripts("libffmpeg.js");
+self.importScripts("wasmdecoder.js");
 
 function Decoder() {
     this.logger             = new Logger("Decoder");
