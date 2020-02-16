@@ -16,6 +16,7 @@ export EXPORTED_FUNCTIONS="[ \
 echo "Running Emscripten..."
 emcc decoder.c dist/lib/libavformat.a dist/lib/libavcodec.a dist/lib/libavutil.a dist/lib/libswscale.a \
     -O3 \
+    --llvm-lto 3 \
     -I "dist/include" \
     -s WASM=1 \
     -s MODULARIZE=1 -s EXPORT_NAME=DecoderModule -s EXPORT_ES6=1 -s USE_ES6_IMPORT_META=0 \
